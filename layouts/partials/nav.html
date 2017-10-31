@@ -1,8 +1,9 @@
 <section class="section">
   <div class="container">
     <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item" href="{{ .Site.BaseURL }}"><h1 class="title is-4">{{ .Site.Title }}</h1></a>
+      <div class="site-title">
+        <h1 class="title is-4"><a class="" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+        <h4>{{ .Site.Params.Info.description }}</h4>
       </div>
       <div class="nav-right">
         <nav class="nav-item level is-mobile">
@@ -11,7 +12,7 @@
             <a class="level-item" href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' target='_blank' rel='noopener'>
             <span class="icon">
               <i class>
-                {{- partial "svg/icons" $platform -}}                
+                {{- partial "svg/icons" $platform -}}
               </i>
             </span>
           </a>
