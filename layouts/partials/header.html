@@ -13,6 +13,7 @@
 {{ end }}
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css"/>
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}/images/favicon.ico" type="image/x-icon" />
 {{- range .Site.Params.Assets.customCSS -}}
 <link rel='stylesheet' href='{{ . | relURL }}'>
 {{- end -}}
